@@ -30,7 +30,7 @@ function getMovies(key) {
 // update UI
 function updateUI(movies) {
   let cards = "";
-  movies.forEach((m) => (cards += showCard(m)));
+  movies.map((m) => (cards += showCard(m)));
   const moviesContainer = document.querySelector(".movies-container");
   moviesContainer.innerHTML = cards;
 }
